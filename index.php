@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebFa Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebFa</a>
+
+        <div class="nav-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./">Weather App</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<div id="main" class="starter-template">
+    <div id="content">
+        <div class="background-image"></div>
+        <form>
+            <div class="row">
+                <div class="col-8 col-sm-10 col-lg-10">
+                    <input autofocus type="search" id="searchCity" class="form-control input-large"
+                           placeholder="Enter a zipcode, name of city or country">
+                </div>
+                <div class="col-4 col-sm-2 col-lg-2">
+                    <input type="submit" id="searchButton" class="btn btn-large" value="Go"/>
+                </div>
+            </div>
+
+
+        </form>
+        <div id="output"></div>
+
+        <script id="weather-template" type="text/x-handlebars-template">
+            <table class="table table-bordered table-hover">
+                {{#if msg}}
+                <h3 class="alert alert-info" data-dismiss="alert">{{msg}} <a class="close" href="#">x</a></h3>
+                {{else}}
+                <h3>
+                    {{#if city}}
+                    {{city}}, {{country}}
+                    {{else}}
+                    {{country}}
+                    {{/if}}
+                </h3>
+                <thead>
+                <tr>
+                    <th width="15%">
+                        Temperature
+                    </th>
+                    <th width="15%">
+                        Humidity
+                    </th>
+                    <th width="70%">
+                        Description
+                    </th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        {{temp}}
+                    </td>
+                    <td>
+                        {{humid}}
+
+                    </td>
+                    <td>
+                        {{weatherdesc}}
+                    </td>
+
+                </tr>
+                </tbody>
+                {{/if}}
+            </table>
+        </script>
+    </div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/handlebars.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
