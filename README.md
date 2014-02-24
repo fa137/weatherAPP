@@ -6,7 +6,7 @@ Enter a city, zipcode or country name and it will give you the current weather s
 It's great to compare multiple cities at once.
 
 
-![](https://github.com/fa137/weatherAPP/img/example.png)
+![](https://raw2.github.com/fa137/weatherAPP/master/img/example.png)
 
 Also you can check out online demo:
 
