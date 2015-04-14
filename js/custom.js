@@ -22,7 +22,7 @@
         return (((val - 273.15) * 1.8) + 32).toFixed(2) + " \u00B0F";
       },
       gotInput: function(city) {
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&callback=?";
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&callback=?";
         return this.fetch();
       },
       fetch: function() {
