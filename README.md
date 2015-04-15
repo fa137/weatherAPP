@@ -7,6 +7,6 @@ It's great to compare multiple cities at once.
 
 
 
-![](https://raw.githubusercontent.com/fa137/weatherAPP/master/img/example.png)
+![](http://raw.githubusercontent.com/fa137/weatherAPP/master/img/example.png)
 
-Also you can check out [demo](https://rawgithub.com/fa137/weatherAPP/master/index.html).
+Also you can check out [demo](http://rawgithub.com/fa137/weatherAPP/master/index.html).
