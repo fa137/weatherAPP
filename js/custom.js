@@ -22,7 +22,7 @@
         return (((val - 273.15) * 1.8) + 32).toFixed(2) + " \u00B0F";
       },
       gotInput: function(city) {
-        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=ae64f8c9a4b3dc6d8297fbb247283abd";
+        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=ae64f8c9a4b3dc6d8297fbb247283abd";
         return this.fetch();
       },
       fetch: function() {
